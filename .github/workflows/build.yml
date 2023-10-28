@@ -1,0 +1,10 @@
+name: Build Zero
+on: push
+
+jobs:
+	build:
+		name: build
+		runs-on: ubuntu-latest
+		steps:
+			- name: build
+			  run: masm src/main.asm
